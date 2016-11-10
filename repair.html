@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>МСК Строй</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/img/favicon.ico" rel="shortcut icon">
+    <meta name="theme-color" content="#fff">
+    <link rel="stylesheet" media="all" href="css/screen.css">
+    <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="shedule wow bounceInLeft">
+                Ежедневно c <span class="shedule__time">10:00</span> до <span class="shedule__time">21:00</span>
+            </div>
+
+            <div class="call wow bounceInRight">
+                <a class="call__order" href="#">Заказать обратный звонок</a>
+                <a class="call__tel" href="tel:+7(963)767-19-82">+7 (963) 767-19-82</a>
+            </div>
+
+            <a class="header__logo logo" href="index.html">
+                <svg class="icon icon-logo">
+                    <use xlink:href="img/sprite.svg#icon-logo"></use>
+                </svg>Дизайн и ремонт
+            </a>
+            <div class="hamburger hamburger_spin js-hamburger">
+                <div class="hamburger__box">
+                    <div class="hamburger__inner"></div>
+                </div>
+            </div>
+            <nav class="header__nav nav">
+                <div class="nav__left wow bounceInLeft">
+                    <a class="nav__link" href="index.html">О компании</a>
+                    <a class="nav__link active" href="repair.html">Ремонт</a>
+                    <a class="nav__link" href="#">Дизайн интерьеров</a>
+                </div>
+                <div class="nav__right wow bounceInRight">
+                    <a class="nav__link" href="#">Галерея работ</a>
+                    <a class="nav__link" href="price.html">Цены</a>
+                    <a class="nav__link" href="#">Отзывы</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="work wow zoomIn">
+            <div class="work-slider js-slider">
+                <div class="work-slider__item">
+                    <img class="work-slider__img" src="img/content/repair_sld-1.jpg" alt="Ремонт под ключ">
+                    <div class="work-slider__inner">
+                        <h3 class="work-slider__title">Ремонт квартир <br>
+                          <span>под ключ</span></h3>
+                        <div class="work-price">
+                            <div class="work-price__text">от</div>
+                            <div class="work-price__number">4000</div>
+                            <div class="work-price__size">M<span>2</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-slider__item">
+                    <img class="work-slider__img" src="img/content/repair_sld-1.jpg" alt="Ремонт под ключ">
+                    <div class="work-slider__inner">
+                        <h3 class="work-slider__title">Ремонт квартир <br>
+                        <span>под ключ</span></h3>
+                        <div class="work-price">
+                            <div class="work-price__text">от</div>
+                            <div class="work-price__number">4000</div>
+                            <div class="work-price__size">M<span>2</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-slider__item">
+                    <img class="work-slider__img" src="img/content/repair_sld-1.jpg" alt="Ремонт под ключ">
+                    <div class="work-slider__inner">
+                        <h3 class="work-slider__title">Ремонт квартир <br>
+                        <span>под ключ</span></h3>
+                        <div class="work-price">
+                            <div class="work-price__text">от</div>
+                            <div class="work-price__number">4000</div>
+                            <div class="work-price__size">M<span>2</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="work__title">Что мы делаем</h2>
+                <p class="work__descr">В компании «МСК-СТРОЙ» можно заказать ремонт квартир под ключ в Москве и ближайшем Подмосковье. Наши специалисты выполнят весь комплекс работ на высоком уровне и в полном соответствии с действующими СНиПами и ГОСТами. Мы выполняем заказы
+                    на преображение любых квартир – расположенных в новостройке или старом доме, требующих только косметического или полноценного капитального ремонта.</p>
+                <div class="work__actions actions wow tada">
+                    <a class="actions__btn actions__btn--price">Рассчитать стоимость</a>
+                    <a class="actions__btn actions__btn--measure js-actions-btn">Вызвать замерщика</a>
+                    <div class="actions__popup js-actions-popup">
+                        <div class="actions__popup-inner js-popup-form">
+                            <div class="actions__popup-close js-actions-close"></div>
+                            <h4 class="actions__popup-title">Вызвать замерщика</h4>
+                            <form class="actions__popup-form" action="#">
+                                <input class="actions__popup-field" type="text" name="name" placeholder="Ваше имя" required>
+                                <input class="actions__popup-field" type="tel" name="tel" placeholder="Телефон" required>
+                                <input class="actions__popup-field" type="email" name="email" placeholder="E-mail" required>
+                                <textarea class="actions__popup-message" name="text" placeholder="Сообщение (необязательно)"></textarea>
+                                <button class="actions__popup-btn btn" type="submit" name="send">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="types">
+
+            <h2 class="types__title wow flipInX" data-wow-offset="50" data-wow-duration="1.5s">Типы ремонтов квартир</h2>
+            <div class="types__inner">
+                <div class="types-item wow flipInY" data-wow-delay="0.5s" data-wow-offset="150">
+                    <div class="types-item__inner">
+                        <div class="types-item__pic types-item__pic--capital">
+                            <svg class="types-item__img icon-house">
+                                   <use xlink:href="img/sprite.svg#icon-house"></use>
+                               </svg>
+                        </div>
+                        <h3 class="types-item__title">Капитальный <span>ремонт</span></h3>
+                        <div class="work-price work-price--sm">
+                            <div class="work-price__text">от</div>
+                            <div class="work-price__number">6000</div>
+                            <div class="work-price__size">M<span>2</span></div>
+                        </div>
+                        <ul class="types-item__list">
+                            <li class="types-item__list-item">Новые перегородки</li>
+                            <li class="types-item__list-item">Европейские обои</li>
+                            <li class="types-item__list-item">Новый пол</li>
+                            <li class="types-item__list-item">Новый потолок</li>
+                            <li class="types-item__list-item">Новая проводка</li>
+                            <li class="types-item__list-item">Санузел под ключ</li>
+                            <li class="types-item__list-item">Новые окна</li>
+                            <li class="types-item__list-item">Новая плитка</li>
+                        </ul>
+                    </div>
+                    <div class="types-terms">
+                        <div class="types-terms__text">
+                            <i class="types-terms__pic">
+                                 <svg class="icon icon-calendar">
+                                    <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                                 </svg>
+                              </i> Сроки ремонта:</div>
+                        <div class="types-terms__days">30 дней</div>
+                    </div>
+                </div>
+                <div class="types-item wow flipInY" data-wow-delay="1s" data-wow-offset="150">
+                    <div class="types-item__inner">
+                        <div class="types-item__pic types-item__pic--individual">
+                            <svg class="types-item__img icon-house">
+                                   <use xlink:href="img/sprite.svg#icon-house"></use>
+                               </svg>
+                        </div>
+                        <h3 class="types-item__title">Индивидуальный <span>проект</span></h3>
+                        <div class="work-price work-price--sm">
+                            <div class="work-price__text">от</div>
+                            <div class="work-price__number">8000</div>
+                            <div class="work-price__size">M<span>2</span></div>
+                        </div>
+                        <ul class="types-item__list">
+                            <li class="types-item__list-item">Новые перегородки</li>
+                            <li class="types-item__list-item">Европейские обои</li>
+                            <li class="types-item__list-item">Новый пол</li>
+                            <li class="types-item__list-item">Новый потолок</li>
+                            <li class="types-item__list-item">Новая проводка</li>
+                            <li class="types-item__list-item">Санузел под ключ</li>
+                            <li class="types-item__list-item">Новые окна</li>
+                            <li class="types-item__list-item">Новая плитка</li>
+                        </ul>
+                    </div>
+                    <div class="types-terms">
+                        <div class="types-terms__text">
+                            <i class="types-terms__pic">
+                                 <svg class="icon icon-calendar">
+                                    <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                                 </svg>
+                              </i> Сроки ремонта:</div>
+                        <div class="types-terms__days">30 дней</div>
+                    </div>
+                </div>
+                <div class="types-item wow flipInY" data-wow-delay="1.5s" data-wow-offset="150">
+                    <div class="types-item__inner">
+                        <div class="types-item__pic types-item__pic--exclusive">
+                            <svg class="types-item__img icon-house">
+                                   <use xlink:href="img/sprite.svg#icon-house"></use>
+                               </svg>
+                        </div>
+                        <h3 class="types-item__title">Эксклюзивный <span>ремонт</span></h3>
+                        <div class="work-price work-price--sm">
+                            <div class="work-price__text">от</div>
+                            <div class="work-price__number">12000</div>
+                            <div class="work-price__size">M<span>2</span></div>
+                        </div>
+                        <ul class="types-item__list">
+                            <li class="types-item__list-item">Новые перегородки</li>
+                            <li class="types-item__list-item">Европейские обои</li>
+                            <li class="types-item__list-item">Новый пол</li>
+                            <li class="types-item__list-item">Новый потолок</li>
+                            <li class="types-item__list-item">Новая проводка</li>
+                            <li class="types-item__list-item">Санузел под ключ</li>
+                            <li class="types-item__list-item">Новые окна</li>
+                            <li class="types-item__list-item">Новая плитка</li>
+                        </ul>
+                    </div>
+                    <div class="types-terms">
+                        <div class="types-terms__text">
+                            <i class="types-terms__pic">
+                                 <svg class="icon icon-calendar">
+                                    <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                                 </svg>
+                              </i> Сроки ремонта:</div>
+                        <div class="types-terms__days">30 дней</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="periods">
+                    <div class="periods__item wow fadeInLeft" data-wow-delay="0.5s">
+                        <div class="periods__pic periods__pic--preparation"></div>
+                        <div class="periods__text">
+                            <h5 class="periods__title">Подготовительный этап</h5>
+                            <p class="periods__descr">Договор, акты выполненных работ, акт закрытия работ, гарантия.</p>
+                        </div>
+                    </div>
+                    <div class="periods__item wow fadeInLeft" data-wow-delay="1s">
+                        <div class="periods__pic periods__pic--main"></div>
+                        <div class="periods__text">
+                            <h5 class="periods__title">Основыне мероприятия</h5>
+                            <p class="periods__descr">Договор, акты выполненных работ, акт закрытия работ, гарантия.</p>
+                        </div>
+                    </div>
+                    <div class="periods__item wow fadeInLeft" data-wow-delay="1.5s">
+                        <div class="periods__pic periods__pic--final"></div>
+                        <div class="periods__text">
+                            <h5 class="periods__title">Заключительный этап</h5>
+                            <p class="periods__descr">Договор, акты выполненных работ, акт закрытия работ, гарантия.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="container">
+               <div class="example__col wow flipInX" data-wow-offset="50" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                   <span class="example__label">Мы сделали</span>
+                   <h2 class="example__title">Ремонт квартиры на Маяковской</h2>
+                   <a href="#" class="example__btn btn btn--triangle">Хочу такой ремонт!</a>
+               </div>
+                <div class="example__col">
+                    <div class="example__testimonial testimonial wow zoomInLeft" data-wow-delay="1s">
+                        <div class="testimonial__inner">
+                            <div class="testimonial__user">
+                                <div class="testimonial__pic">
+                                    <img class="testimonial__img" src="img/content/client.png" alt="Ольга и Александр">
+                                </div>
+                                <div class="testimonial__name">Ольга и Александр</div>
+                            </div>
+                            <p class="testimonial__text">Обратился в организацию летом. Решил сделать капитальный ремонт своей квартиры. После предварительного звонка ко мне приехал замерщик. Я выбирал подрядчика по критерию «цена=качество». Слишком дешево не хотелось, дабы имелась
+                                неудачная практика работы с частными компаниями. Остановил свой выбор на этой организации.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example__col">
+                    <div class="compare">
+                        <figure class="compare-item wow bounceInLeft" data-wow-delay="2s">
+                            <img class="compare-item__img" src="img/content/after_repair.jpg" alt="После ремонта">
+                            <figcaption class="compare-item__descr">После ремонта</figcaption>
+                        </figure>
+                        <div class="compare-price wow flipInY">
+                            <div class="compare-price__label">Цена</div>
+                            <div class="work-price--compare work-price">
+                                <div class="work-price__text">от</div>
+                                <div class="work-price__number">85 000</div>
+                                <div class="work-price__size">M<span>2</span></div>
+                            </div>
+                        </div>
+                        <figure class="compare-item wow bounceInRight" data-wow-delay="2s">
+                            <img class="compare-item__img" src="img/content/before_repair.jpg" alt="До ремонта">
+                            <figcaption class="compare-item__descr">До ремонта</figcaption>
+                        </figure>
+                        <div class="compare-text wow flipInY">
+                            <div class="compare-text__position">Руководитель проекта:</div>
+                            <div class="compare-text__manager">Мария Васницова, архитектор. Стаж работы более 10 лет.</div>
+                        </div>
+                        <ul class="apartments wow flipInY">
+                            <li class="apartments__item apartments__item--size">130 кв.м.</li>
+                            <li class="apartments__item apartments__item--rooms">4 комнаты</li>
+                            <li class="apartments__item apartments__item--address">Багратиона-Епистархова, д.137</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices">
+            <div class="container">
+                <div class="prices__top">
+                    <h2 class="prices__title wow flipInX" data-wow-offset="50" data-wow-duration="1.5s">Каковы цены</h2>
+                    <div class="prices__col wow fadeInUp" data-wow-offset="100">
+                        <p class="prices__descr">Стоимость ремонта квартир под ключ рассчитывается специалистами компании после проведения замеров. До этого можно ознакомиться с примерным прайсом на капитальный, индивидуальный и эксклюзивный ремонт на нашем сайте. Узнайте подробнее
+                            о ценах, позвонив нам по телефону или заполнив форму обратной связи.</p>
+                        <div class="prices__text">Сделайте шаг к уютной и красивой квартире уже сейчас.</div>
+                    </div>
+                    <div class="prices__col wow fadeInUp" data-wow-offset="100">
+                        <p class="prices__descr">В процессе работы рассчитанная стоимость не будет меняться. Это позволяет нашим клиентам всегда точно знать цены на услуги и планировать свой бюджет. Открытые и уважительные отношения с заказчиками для нас важнее, чем заманчивые
+                            рекламные лозунги. Именно поэтому мы никогда не стремимся искусственно приуменьшить итоговую сумму, оставляя её относительно недорогой.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prices__divider"></div>
+                <div class="container">
+                   <div class="prices__bot">
+                    <div class="prices__inner">
+                        <div class="prices__actions actions wow tada">
+                            <a class="actions__btn actions__btn--price">Рассчитать стоимость</a>
+                            <a class="actions__btn actions__btn--measure js-actions-btn">Вызвать замерщика</a>
+                            <div class="actions__popup js-actions-popup">
+                                <div class="actions__popup-inner js-popup-form">
+                                    <div class="actions__popup-close js-actions-close"></div>
+                                    <h4 class="actions__popup-title">Вызвать замерщика</h4>
+                                    <form class="actions__popup-form" action="#">
+                                        <input class="actions__popup-field" type="text" name="name" placeholder="Ваше имя" required>
+                                        <input class="actions__popup-field" type="tel" name="tel" placeholder="Телефон" required>
+                                        <input class="actions__popup-field" type="email" name="email" placeholder="E-mail" required>
+                                        <textarea class="actions__popup-message" name="text" placeholder="Сообщение (необязательно)"></textarea>
+                                        <button class="actions__popup-btn btn" type="submit" name="send">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices__label wow fadeInRight">Дизайн проекта в подарок, подробности уточняйте у менеджера по телефону</div>
+                        <div class="prices-table__wrapper">
+                            <table class="prices-table wow flipInX">
+                                <tbody>
+                                    <tr class="prices-table__row">
+                                        <th class="prices-table__head">Тип квартиры</th>
+                                        <th class="prices-table__head">Стандартный ремонт</th>
+                                        <th class="prices-table__head">Евроремонт</th>
+                                        <th class="prices-table__head">Ремонт класса люкс</th>
+                                    </tr>
+                                    <tr class="prices-table__row">
+                                        <td class="prices-table__col">Однокомнатная</td>
+                                        <td class="prices-table__col">от 120 000 руб.</td>
+                                        <td class="prices-table__col">от 180 000 руб.</td>
+                                        <td class="prices-table__col">от 360 000 руб.</td>
+                                    </tr>
+                                    <tr class="prices-table__row">
+                                        <td class="prices-table__col">Двухкомнатная</td>
+                                        <td class="prices-table__col">от 200 000 руб.</td>
+                                        <td class="prices-table__col">от 300 000 руб.</td>
+                                        <td class="prices-table__col">от 600 000 руб.</td>
+                                    </tr>
+                                    <tr class="prices-table__row">
+                                        <td class="prices-table__col">Трехкомнатная</td>
+                                        <td class="prices-table__col">от 300 000 руб.</td>
+                                        <td class="prices-table__col">от 450 000 руб.</td>
+                                        <td class="prices-table__col">от 900 000 руб.</td>
+                                    </tr>
+                                    <tr class="prices-table__row">
+                                        <td class="prices-table__col">Квартира-студия</td>
+                                        <td class="prices-table__col">от 160 000 руб.</td>
+                                        <td class="prices-table__col">от 240 000 руб.</td>
+                                        <td class="prices-table__col">от 480 000 руб.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="advantages-line wow fadeInUp">
+            <div class="container">
+                <div class="advantages-line__col">
+                    <div class="advantages-line__item advantages-line__item--legal">
+                        <p class="advantages-line__descr">Юридическое обеспечение проекта: договор, акты выполненных работ, акт закрытия работ, гарантия.</p>
+                    </div>
+                </div>
+                <div class="advantages-line__col">
+                    <div class="advantages-line__item advantages-line__item--experience">
+                        <p class="advantages-line__descr">Профессиональный стаж прорабов от 15 лет, стаж рабочих от 10 лет.</p>
+                    </div>
+                </div>
+                <div class="advantages-line__col">
+                    <div class="advantages-line__item advantages-line__item--best">
+                        <p class="advantages-line__descr">Мы стремимся предоставить нашим клиентам лучший сервис! Поэтому Ваш договор будет вести персональный менеджер проекта.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top wow flipInX">
+                <div class="footer__adress">Наш адрес: Москва, ул. Гашека, дом 8, стр.10, этаж 4</div>
+                <div class="footer__call call">
+                    <a class="call__tel" href="tel:+7 (963) 767-19-82">+7(963)767-19-82</a>
+                    <a class="call__order" href="#">Заказать обратный звонок</a>
+                </div>
+                <div class="footer__social social">
+                    <a class="social__item social__item--fb" href="#">
+                        <svg class="social__pic icon-fb">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item social__item--tw" href="#">
+                        <svg class="social__pic icon-tw">
+                            <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item social__item--rss" href="#">
+                        <svg class="social__pic icon-rss">
+                            <use xlink:href="img/sprite.svg#icon-rss"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bot wow flipInX">
+                <div class="footer-logo"><span class="footer-logo__label">&copy; 2005 - 2016</span></div>
+                <nav class="footer__nav nav">
+                   <a class="nav__link" href="index.html">О компании</a>
+                   <a class="nav__link" href="repair.html">Ремонт</a>
+                   <a class="nav__link" href="#">Дизайн интерьеров</a>
+                   <a class="nav__link" href="#">Галерея работ</a>
+                   <a class="nav__link" href="price.html">Цены</a>
+                   <a class="nav__link" href="#">Отзывы</a>
+                   <a class="nav__link" href="#">Контакты</a>
+              </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

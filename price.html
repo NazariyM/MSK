@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>МСК Строй</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/img/favicon.ico" rel="shortcut icon">
+    <meta name="theme-color" content="#fff">
+    <link rel="stylesheet" media="all" href="css/screen.css">
+    <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="shedule wow bounceInLeft">
+                Ежедневно c <span class="shedule__time">10:00</span> до <span class="shedule__time">21:00</span>
+            </div>
+
+            <div class="call wow bounceInRight">
+                <a class="call__order" href="#">Заказать обратный звонок</a>
+                <a class="call__tel" href="tel:+7(963)767-19-82">+7 (963) 767-19-82</a>
+            </div>
+
+            <a class="header__logo logo" href="index.html">
+                <svg class="icon icon-logo">
+                    <use xlink:href="img/sprite.svg#icon-logo"></use>
+                </svg>Дизайн и ремонт
+            </a>
+            <div class="hamburger hamburger_spin js-hamburger">
+                <div class="hamburger__box">
+                    <div class="hamburger__inner"></div>
+                </div>
+            </div>
+            <nav class="header__nav nav">
+                <div class="nav__left wow bounceInLeft">
+                    <a class="nav__link" href="index.html">О компании</a>
+                    <a class="nav__link" href="repair.html">Ремонт</a>
+                    <a class="nav__link" href="#">Дизайн интерьеров</a>
+                </div>
+                <div class="nav__right wow bounceInRight">
+                    <a class="nav__link" href="#">Галерея работ</a>
+                    <a class="nav__link active" href="price.html">Цены</a>
+                    <a class="nav__link" href="#">Отзывы</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="calculation">
+            <div class="container">
+                <div class="calculation__inner wow zoomIn">
+                    <h2 class="calculation__title">Форма подсчета стоимости</h2>
+                    <div class="calculation__form-wrapp">
+                        <form class="calculation__form" action="#" method="post">
+                            <div class="calculation__form-inner">
+                                <div class="calculation__select-wrapp">
+                                    <select class="calculation__select" name="location" id="location" required>
+                           <option disabled hidden>Выбрать</option>
+                           <option value="flat" selected>Квартира</option>
+                           <option value="house">Дом</option>
+                           <option value="cottage">Котедж</option>
+                        </select>
+                                </div>
+                                <label class="calculation__label" for="location">Где будет ремонт?</label>
+                            </div>
+                            <div class="calculation__form-inner">
+                                <div class="calculation__select-wrapp">
+                                    <div class="calculation__number-wrapp">
+                                        <input class="calculation__number" id="area" type="text" name="area" value="area" min="0" max="500" step="10" required>
+                                        <div class="calculation__number-size">М<span>2</span></div>
+                                    </div>
+                                    <div class="calculation__range" id="range"></div>
+                                </div>
+                                <label class="calculation__label" for="area">Площадь пола</label>
+                            </div>
+                            <div class="calculation__form-inner">
+                                <div class="calculation__select-wrapp">
+                                    <select id="type" class="calculation__select" name="type" required>
+                           <option disabled selected hidden>Выбрать</option>
+                           <option value="">Полный</option>
+                           <option value="">Частичный</option>
+                           <option value="">Полный</option>
+                        </select>
+                                </div>
+                                <label class="calculation__label" for="type">Тип ремонта</label>
+                            </div>
+                            <div class="calculation__form-inner">
+                                <div class="calculation__select-wrapp">
+                                    <select id="ceiling" class="calculation__select" name="ceiling" required>
+                           <option disabled selected hidden>Выбрать</option>
+                           <option value="">Полный</option>
+                           <option value="">Частичный</option>
+                           <option value="">Полный</option>
+                        </select>
+                                </div>
+                                <label class="calculation__label" for="ceiling">Потолок</label>
+                            </div>
+                            <div class="calculation__form-inner">
+                                <div class="calculation__select-wrapp">
+                                    <select id="walls" class="calculation__select" name="walls" required>
+                           <option disabled selected hidden>Выбрать</option>
+                           <option value="">Полный</option>
+                           <option value="">Частичный</option>
+                           <option value="">Полный</option>
+                        </select>
+                                </div>
+                                <label class="calculation__label" for="walls">Стены</label>
+                            </div>
+                            <div class="calculation__form-inner">
+                                <div class="calculation__select-wrapp">
+                                    <select id="floor" class="calculation__select" name="floor" required>
+                           <option disabled selected hidden>Выбрать</option>
+                           <option value="">Полный</option>
+                           <option value="">Частичный</option>
+                           <option value="">Полный</option>
+                        </select>
+                                </div>
+                                <label class="calculation__label" for="floor">Пол</label>
+                            </div>
+                            <div class="calculation__form-inner">
+                                <div class="calculation__select-wrapp">
+                                    <input class="calculation__form-add" name="electric" id="electric" type="checkbox">
+                                    <label class="calculation__form-btn" for="electric">Электрика</label>
+                                    <input class="calculation__form-add" name="bathroom" id="bathroom" type="checkbox">
+                                    <label class="calculation__form-btn" for="bathroom">Ванная</label>
+                                </div>
+                                <label class="calculation__label">Дополнительно</label>
+                            </div>
+                            <div class="calculation__result">
+                                <div class="calculation__result-inner">
+                                    <div class="calculation__result-label">Итого:</div>
+                                    <div class="calculation__result-number">980 200</div>
+                                </div>
+                                <div class="calculation__result-inner promo">
+                                    <div class="promo__number">30</div>
+                                    <div class="promo__text">Погрешность предварительного расчета</div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="calculation__info">Калькулятор производит предварительный расчет. Точный расчет произведет наш консультант.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+        <section class="exact wow zoomIn">
+                <h2 class="exact__title wow flipInX">Более точный расчет</h2>
+                <div class="exact__inner">
+                    <div class="exact-item exact-item--load">
+                        <div class="exact__promo promo">
+                            <div class="promo__number">5</div>
+                            <div class="promo__text">Погрешность предварительного расчета</div>
+                        </div>
+                        <div class="exact-item__text">Есть Готовый дизайн-проект</div>
+                        <form class="exact-item__load" action="#">
+                            <input class="exact-item__load-inp" type="file" id="load-file" required>
+                            <label class="exact-item__load-btn" for="load-file">Загрузить файл</label>
+                            <button class="exact-item__btn btn btn--triangle" type="submit" name="submit">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="exact-item exact-item--call">
+                        <div class="exact__promo promo">
+                            <div class="promo__number">20</div>
+                            <div class="promo__text">Погрешность предварительного расчета</div>
+                        </div>
+                        <div class="exact-item__text">Узнать цену<br> по телефону</div>
+                        <a class="exact-item__btn btn btn--triangle" href="#">Позвонить консультанту</a>
+                        <div class="exact-item__phone">Телефон:<br>
+                            <span>+7 (495) 268-07-41</span></div>
+                    </div>
+                    <div class="exact-item exact-item--ordering">
+                        <div class="exact__promo promo">
+                            <div class="promo__number">0</div>
+                            <div class="promo__text">Погрешность предварительного расчета</div>
+                        </div>
+                        <div class="exact-item__text exact-item__text--lg">Вызов замерщика на дом (бесплатно)</div>
+                        <button class="exact-item__btn btn btn--triangle js-actions-btn" type="button">Вызвать замерщика</button>
+                        <div class="actions__popup js-actions-popup">
+                           <div class="actions__popup-inner js-popup-form">
+                               <div class="actions__popup-close js-actions-close"></div>
+                               <h4 class="actions__popup-title">Вызвать замерщика</h4>
+                               <form class="actions__popup-form" action="#">
+                                   <input class="actions__popup-field" type="text" name="name" placeholder="Ваше имя" required>
+                                   <input class="actions__popup-field" type="tel" name="tel" placeholder="Телефон" required>
+                                   <input class="actions__popup-field" type="email" name="email" placeholder="E-mail" required>
+                                   <textarea class="actions__popup-message" name="text" placeholder="Сообщение (необязательно)"></textarea>
+                                   <button class="actions__popup-btn btn" type="submit" name="send">Отправить</button>
+                               </form>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+             </section>
+            </div>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio__title-wrapp">
+                   <div class="portfolio__label">Портфолио</div>
+                   <h2 class="portfolio__title wow flipInX">Последние работы</h2>
+                </div>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item wow flipInY" data-wow-delay="0.5s">
+                        <a href="#" class="portfolio__link">
+                            <div class="portfolio__pic"><img class="portfolio__img" src="img/content/portfolio-1.jpg" alt="Двухкомнатная квартира в стиле Прованс">
+                            </div>
+                            <div class="portfolio__text">
+                               <div class="portfolio__label">Квартиры</div>
+                               <div class="portfolio__name">Двухкомнатная квартира в стиле Прованс</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item wow flipInY" data-wow-delay="1s">
+                        <a href="#" class="portfolio__link">
+                            <div class="portfolio__pic"><img class="portfolio__img" src="img/content/portfolio-2.jpg" alt="Двухкомнатная квартира в стиле Прованс">
+                            </div>
+                            <div class="portfolio__text">
+                            <div class="portfolio__label">Офисы</div>
+                            <div class="portfolio__name">BijoUis Studio офис в стиле лофт</div>
+                         </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item wow flipInY" data-wow-delay="1.5s">
+                        <a href="#" class="portfolio__link">
+                            <div class="portfolio__pic"><img class="portfolio__img" src="img/content/portfolio-3.jpg" alt="Двухкомнатная квартира в стиле Прованс">
+                            </div>
+                            <div class="portfolio__text">
+                            <div class="portfolio__label">Коттеджи</div>
+                            <div class="portfolio__name">Отделка помещений и декор кухни</div>
+                         </div>
+                        </a>
+                    </li>
+                </ul>
+                <a class="portfolio__link-all wow tada" href="#">Все проекты</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top wow flipInX">
+                <div class="footer__adress">Наш адрес: Москва, ул. Гашека, дом 8, стр.10, этаж 4</div>
+                <div class="footer__call call">
+                    <a class="call__tel" href="tel:+7 (963) 767-19-82">+7(963)767-19-82</a>
+                    <a class="call__order" href="#">Заказать обратный звонок</a>
+                </div>
+                <div class="footer__social social">
+                    <a class="social__item social__item--fb" href="#">
+                        <svg class="social__pic icon-fb">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item social__item--tw" href="#">
+                        <svg class="social__pic icon-tw">
+                            <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item social__item--rss" href="#">
+                        <svg class="social__pic icon-rss">
+                            <use xlink:href="img/sprite.svg#icon-rss"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bot wow flipInX">
+                <div class="footer-logo"><span class="footer-logo__label">&copy; 2005 - 2016</span></div>
+                <nav class="footer__nav nav">
+                   <a class="nav__link" href="index.html">О компании</a>
+                   <a class="nav__link" href="repair.html">Ремонт</a>
+                   <a class="nav__link" href="#">Дизайн интерьеров</a>
+                   <a class="nav__link" href="#">Галерея работ</a>
+                   <a class="nav__link" href="price.html">Цены</a>
+                   <a class="nav__link" href="#">Отзывы</a>
+                   <a class="nav__link" href="#">Контакты</a>
+              </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
